@@ -34,6 +34,10 @@ class Controller extends Component {
     show: PropTypes.bool,
     hiddenQualityMenu: PropTypes.bool,
     hiddenVolumeItem: PropTypes.bool,
+    showFullScreen: PropTypes.bool,
+    showTimeText: PropTypes.bool,
+    showPLayPauseBtn: PropTypes.bool,
+    timelineStyle: PropTypes.object,
   }
 
   static defaultProps = {
@@ -262,6 +266,10 @@ class Controller extends Component {
       onToggleFullScreen,
       hiddenVolumeItem,
       hiddenQualityMenu,
+      showFullScreen,
+      showTimeText,
+      showPLayPauseBtn,
+      timelineStyle,
     } = this.props
     const {
       isVolumeHovered,
@@ -273,10 +281,12 @@ class Controller extends Component {
     const displayedCurrentTime = slideTime || currentTime
     return (
       <div className={css(styles.root, isFullScreen && styles.fullScreened)}>
-        <PlayButtonItem
-          isPlaying={isPlaying}
-          onClick={() => this.handleToggle('button')}
-        />
+        {showPLayPauseBtn && (
+          <PlayButtonItem
+            isPlaying={isPlaying}
+            onClick={() => this.handleToggle('button')}
+          />
+        )}
         <TimelineItem
           value={currentTime}
           total={duration}
@@ -285,14 +295,17 @@ class Controller extends Component {
           onDragEnd={onDragEnd}
           onChange={this.onDragMove}
           onSeek={this.handleSeek}
+          style={timelineStyle}
         />
-        <CombinedTimeItem
-          isFullScreen={isFullScreen}
-          currentTime={displayedCurrentTime}
-          duration={duration}
-        />
-        {!hiddenQualityMenu && <QualityMenuItem />}
-        {!hiddenVolumeItem && (
+        {showTimeText && (
+          <CombinedTimeItem
+            isFullScreen={isFullScreen}
+            currentTime={displayedCurrentTime}
+            duration={duration}
+          />
+        )}
+        {hiddenQualityMenu && <QualityMenuItem />}
+        {hiddenVolumeItem && (
           <VolumeItem
             volume={volume}
             menuShown={isVolumeHovered || isVolumeDragging || isVolumeKeyboard}
@@ -304,10 +317,12 @@ class Controller extends Component {
             onChange={this.handleVolumeChange}
           />
         )}
-        <FullScreenButtonItem
-          isFullScreen={isFullScreen}
-          onClick={onToggleFullScreen}
-        />
+        {showFullScreen && (
+          <FullScreenButtonItem
+            isFullScreen={isFullScreen}
+            onClick={onToggleFullScreen}
+          />
+        )}
       </div>
     )
   }

@@ -1,3 +1,11 @@
+/*
+ * @Author: wangzhong
+ * @Date: 2020-07-24 16:22:19
+ * @LastEditors: wangzhong
+ * @LastEditTime: 2020-07-24 18:07:25
+ * @FilePath: /griffith/example/mp4/App.js
+ */
+
 import React from 'react'
 import {hot} from 'react-hot-loader'
 import PlayerContainer, {MessageContext} from 'griffith'
@@ -33,17 +41,36 @@ const props = {
   cover: 'https://zhstatic.zhihu.com/cfe/griffith/zhihu2018.jpg',
   duration,
   sources,
-  autoplay: true,
   shouldObserveResize: true,
   src: 'https://zhstatic.zhihu.com/cfe/griffith/zhihu2018_sd.mp4',
+  useCustomControl: true,
+  showFullScreen: false,
+  showVloume: false,
+  showQuality: false,
+  showTimeText: false,
+  showPLayPauseBtn: false,
+  timelineStyle: {},
 }
 
 const App = () => (
-  <PlayerContainer {...props}>
-    <MessageContext.Consumer>
-      {({subscribeEvent}) => <LayerTest subscribeEvent={subscribeEvent} />}
-    </MessageContext.Consumer>
-  </PlayerContainer>
+  <div style={{height: '100vh', width: '100vw', overflow: 'hidden'}}>
+    <PlayerContainer {...props}>
+      <MessageContext.Consumer>
+        {({subscribeEvent}) => <LayerTest subscribeEvent={subscribeEvent} />}
+      </MessageContext.Consumer>
+    </PlayerContainer>
+    <div
+      style={{
+        position: 'fixed',
+        width: '100vw',
+        height: '100px',
+        top: 0,
+        left: 0,
+        backgroundColor: '#fff',
+        zIndex: 9999,
+      }}
+    />
+  </div>
 )
 
 export default hot(module)(App)

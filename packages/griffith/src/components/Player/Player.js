@@ -340,7 +340,21 @@ class Player extends Component {
   }
 
   render() {
-    const {error, title, cover, standalone, onEvent, useMSE} = this.props
+    const {
+      error,
+      title,
+      cover,
+      standalone,
+      onEvent,
+      useMSE,
+      useCustomControl,
+      showFullScreen,
+      showVloume,
+      showQuality,
+      showTimeText,
+      showPLayPauseBtn,
+      timelineStyle,
+    } = this.props
     const {
       isPlaybackStarted,
       lastAction,
@@ -366,6 +380,7 @@ class Player extends Component {
     // 播放中 Controller shown/hovered/dragging 时展示 Controller
     // 播放结束展示 Controller
     const showController =
+      useCustomControl ||
       (isPlaybackStarted &&
         (!isPlaying ||
           isControllerShown ||
@@ -374,7 +389,6 @@ class Player extends Component {
       (!isPlaybackStarted && currentTime !== 0)
 
     const bufferedTime = getBufferedTime(currentTime, buffered)
-
     return (
       <div
         className={css(styles.root, isFullScreen && styles.fullScreened)}
@@ -388,7 +402,7 @@ class Player extends Component {
         <div className={css(styles.video)}>
           <Video
             ref={this.videoRef}
-            controls={isMobile && isPlaybackStarted}
+            controls={!useCustomControl && isMobile && isPlaybackStarted}
             paused={!isPlaying}
             volume={volume}
             onPlay={this.handleVideoPlay}
@@ -456,7 +470,7 @@ class Player extends Component {
             </div>
           )}
         </div>
-        {!isMobile && (
+        {(useCustomControl || !isMobile) && (
           <div
             className={css(styles.overlay, isNeverPlayed && styles.overlayMask)}
           >
@@ -518,37 +532,44 @@ class Player extends Component {
               </div>
             )}
             {/*首帧已加载完成时展示 Controller 组件*/}
-            {isPlaybackStarted && (!isLoading || currentTime !== 0) && (
-              <div
-                className={css(
-                  styles.controller,
-                  hiddenOrShownStyle.base,
-                  showController
-                    ? hiddenOrShownStyle.shown
-                    : hiddenOrShownStyle.hidden
-                )}
-                onMouseEnter={this.handleControllerPointerEnter}
-                onMouseLeave={this.handleControllerPointerLeave}
-              >
-                <Controller
-                  standalone={standalone}
-                  isPlaying={isPlaying}
-                  duration={duration}
-                  currentTime={currentTime}
-                  volume={volume}
-                  buffered={bufferedTime}
-                  isFullScreen={isFullScreen}
-                  onDragStart={this.handleControllerDragStart}
-                  onDragEnd={this.handleControllerDragEnd}
-                  onPlay={this.handlePlay}
-                  onPause={this.handlePause}
-                  onSeek={this.handleSeek}
-                  onVolumeChange={this.handleVideoVolumeChange}
-                  onToggleFullScreen={this.handleToggleFullScreen}
-                  show={showController}
-                />
-              </div>
-            )}
+            {(isPlaybackStarted || useCustomControl) &&
+              (!isLoading || currentTime !== 0) && (
+                <div
+                  className={css(
+                    styles.controller,
+                    hiddenOrShownStyle.base,
+                    showController
+                      ? hiddenOrShownStyle.shown
+                      : hiddenOrShownStyle.hidden
+                  )}
+                  onMouseEnter={this.handleControllerPointerEnter}
+                  onMouseLeave={this.handleControllerPointerLeave}
+                >
+                  <Controller
+                    standalone={standalone}
+                    isPlaying={isPlaying}
+                    duration={duration}
+                    currentTime={currentTime}
+                    volume={volume}
+                    buffered={bufferedTime}
+                    isFullScreen={isFullScreen}
+                    onDragStart={this.handleControllerDragStart}
+                    onDragEnd={this.handleControllerDragEnd}
+                    onPlay={this.handlePlay}
+                    onPause={this.handlePause}
+                    onSeek={this.handleSeek}
+                    onVolumeChange={this.handleVideoVolumeChange}
+                    onToggleFullScreen={this.handleToggleFullScreen}
+                    show={showController}
+                    showFullScreen={showFullScreen}
+                    hiddenVolumeItem={showVloume}
+                    hiddenQualityMenu={showQuality}
+                    showTimeText={showTimeText}
+                    showPLayPauseBtn={showPLayPauseBtn}
+                    timelineStyle={timelineStyle}
+                  />
+                </div>
+              )}
           </div>
         )}
         {error && (

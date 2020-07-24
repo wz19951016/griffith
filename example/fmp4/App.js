@@ -1,3 +1,11 @@
+/*
+ * @Author: wangzhong
+ * @Date: 2020-07-24 16:22:19
+ * @LastEditors: wangzhong
+ * @LastEditTime: 2020-07-24 17:46:55
+ * @FilePath: /griffith/example/fmp4/App.js
+ */
+
 import React from 'react'
 import {hot} from 'react-hot-loader'
 import PlayerContainer from 'griffith'
@@ -35,6 +43,13 @@ const props = {
   shouldObserveResize: true,
   src: 'mp4/zhihu2018_sd.mp4',
   useMSE: true,
+  useCustomControl: true,
+  showFullScreen: false,
+  showVloume: false,
+  showQuality: false,
+  showTimeText: false,
+  showPLayPauseBtn: false,
+  timelineStyle: {},
 }
 
 const App = () => <PlayerContainer {...props} />

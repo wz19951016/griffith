@@ -1,3 +1,11 @@
+/*
+ * @Author: wangzhong
+ * @Date: 2020-07-24 16:22:20
+ * @LastEditors: wangzhong
+ * @LastEditTime: 2020-07-24 17:33:33
+ * @FilePath: /griffith/packages/griffith/src/components/PlayerContainer/PlayerContainer.js
+ */
+
 import React from 'react'
 import PropTypes from 'prop-types'
 
@@ -26,6 +34,13 @@ const PlayerContainer = ({
   useMSE,
   locale = 'en',
   autoplay,
+  useCustomControl,
+  showFullScreen,
+  showVloume,
+  showQuality,
+  showTimeText,
+  showPLayPauseBtn,
+  timelineStyle,
 }) => (
   <ObjectFitProvider initialObjectFit={initialObjectFit}>
     <PositionProvider shouldObserveResize={shouldObserveResize}>
@@ -47,6 +62,13 @@ const PlayerContainer = ({
                       onEvent={emitEvent}
                       subscribeAction={subscribeAction}
                       onBeforePlay={() => onBeforePlay(currentSrc)}
+                      useCustomControl={useCustomControl}
+                      showFullScreen={showFullScreen}
+                      showVloume={showVloume}
+                      showQuality={showQuality}
+                      showTimeText={showTimeText}
+                      showPLayPauseBtn={showPLayPauseBtn}
+                      timelineStyle={timelineStyle}
                     />
                   )}
                 </VideoSourceContext.Consumer>
@@ -83,6 +105,13 @@ PlayerContainer.propTypes = {
   onBeforePlay: PropTypes.func,
   initialObjectFit: PropTypes.oneOf(VALID_FIT),
   useMSE: PropTypes.bool,
+  useCustomControl: PropTypes.bool,
+  showFullScreen: PropTypes.bool,
+  showVloume: PropTypes.bool,
+  showQuality: PropTypes.bool,
+  showTimeText: PropTypes.bool,
+  showPLayPauseBtn: PropTypes.bool,
+  timelineStyle: PropTypes.object,
 }
 
 export default PlayerContainer
