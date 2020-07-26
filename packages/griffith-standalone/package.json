@@ -18,5 +18,6 @@
     "griffith": "^1.6.0",
     "react": "16.4.2",
     "react-dom": "16.4.2"
-  }
+  },
+  "gitHead": "27582e76371882bdfb1690aceaa22dfc025fc33c"
 }

@@ -26,5 +26,6 @@
   "dependencies": {
     "griffith-utils": "^1.6.0",
     "lodash": "^4.17.15"
-  }
+  },
+  "gitHead": "27582e76371882bdfb1690aceaa22dfc025fc33c"
 }

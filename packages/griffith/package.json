@@ -37,5 +37,6 @@
   },
   "devDependencies": {
     "jest-localstorage-mock": "^2.4.0"
-  }
+  },
+  "gitHead": "27582e76371882bdfb1690aceaa22dfc025fc33c"
 }
