@@ -1,10 +1,10 @@
 {
-  "name": "griffith",
+  "name": "griffith-justcome",
   "description": "Zhihu Video Player",
-  "homepage": "https://github.com/zhihu/griffith#readme",
+  "homepage": "https://github.com/wz19951016/griffith#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/zhihu/griffith.git"
+    "url": "https://github.com/wz19951016/griffith"
   },
   "private": true,
   "license": "MIT",

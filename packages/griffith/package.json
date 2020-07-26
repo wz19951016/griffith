@@ -1,8 +1,8 @@
 {
   "name": "griffith",
-  "version": "1.5.2",
+  "version": "1.5.3",
   "description": "Zhihu Video Player",
-  "homepage": "https://github.com/zhihu/griffith/tree/master/packages/griffith",
+  "homepage": "https://github.com/wz19951016/griffith/tree/master/packages/griffith",
   "license": "MIT",
   "files": [
     "cjs",
