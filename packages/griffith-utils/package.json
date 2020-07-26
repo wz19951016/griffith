@@ -1,5 +1,5 @@
 {
-  "name": "griffith-utils",
+  "name": "griffith-utils-justcome",
   "version": "1.6.1",
   "description": "griffith utils",
   "homepage": "https://github.com/wz19951016/griffith/tree/master/packages/griffith-utils",
@@ -16,5 +16,5 @@
     "prebuild": "rm -rf esm cjs",
     "build": "rollup -c ../../rollup.config.js"
   },
-  "gitHead": "27582e76371882bdfb1690aceaa22dfc025fc33c"
+  "gitHead": "f0936bcd89aa1f8316ff8ad1a90105316a182422"
 }

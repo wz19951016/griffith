@@ -1,5 +1,5 @@
 {
-  "name": "griffith-hls",
+  "name": "griffith-hls-justcome",
   "version": "1.6.1",
   "description": "griffith hls plugin",
   "homepage": "https://github.com/wz19951016/griffith/tree/master/packages/griffith-hls",
@@ -23,5 +23,5 @@
   "dependencies": {
     "hls.js": "0.7.11"
   },
-  "gitHead": "27582e76371882bdfb1690aceaa22dfc025fc33c"
+  "gitHead": "f0936bcd89aa1f8316ff8ad1a90105316a182422"
 }
