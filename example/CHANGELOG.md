@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.6.0](https://github.com/wz19951016/griffith/compare/v1.5.0...v1.6.0) (2020-07-26)
+
+
+### Bug Fixes
+
+* export controller component ([#117](https://github.com/wz19951016/griffith/issues/117)) ([a99512b](https://github.com/wz19951016/griffith/commit/a99512b))
+
+
+### Features
+
+* 保存修改 ([a87f02e](https://github.com/wz19951016/griffith/commit/a87f02e))
+
+
+
+
+
 ## [1.5.2](https://github.com/xiaoyuhen/griffith/compare/v1.5.0...v1.5.2) (2020-03-31)
 
 
