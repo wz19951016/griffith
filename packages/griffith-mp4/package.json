@@ -1,6 +1,6 @@
 {
   "name": "griffith-mp4",
-  "version": "1.6.0",
+  "version": "1.6.1",
   "description": "griffith mp4 plugin",
   "homepage": "https://github.com/wz19951016/griffith/tree/master/packages/griffith-mp4",
   "license": "MIT",
@@ -24,7 +24,7 @@
     "react-dom": ">=16.3.0 <17.0.0"
   },
   "dependencies": {
-    "griffith-utils": "^1.6.0",
+    "griffith-utils": "^1.6.1",
     "lodash": "^4.17.15"
   },
   "gitHead": "27582e76371882bdfb1690aceaa22dfc025fc33c"
