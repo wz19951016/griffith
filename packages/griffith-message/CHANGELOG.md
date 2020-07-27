@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.6.13](https://github.com/wz19951016/griffith/compare/v1.6.12...v1.6.13) (2020-07-27)
+
+**Note:** Version bump only for package griffith-message-justcome
+
+
+
+
+
 ## [1.6.12](https://github.com/wz19951016/griffith/compare/v1.6.11...v1.6.12) (2020-07-27)
 
 **Note:** Version bump only for package griffith-message-justcome
