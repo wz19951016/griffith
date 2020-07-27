@@ -7150,6 +7150,31 @@ gray-matter@^4.0.0:
     section-matter "^1.0.0"
     strip-bom-string "^1.0.0"
 
+griffith-hls@^1.4.3, griffith-hls@^1.4.4, griffith-hls@^1.6.1:
+  version "1.4.4"
+  resolved "https://registry.npm.taobao.org/griffith-hls/download/griffith-hls-1.4.4.tgz#2a8958ee8681de4b45efaf2bd0c045dc9e50e533"
+  integrity sha1-KolY7oaB3ktF768r0MBF3J5Q5TM=
+  dependencies:
+    hls.js "0.7.11"
+
+griffith-message@^1.4.3, griffith-message@^1.4.4, griffith-message@^1.6.1:
+  version "1.4.4"
+  resolved "https://registry.npm.taobao.org/griffith-message/download/griffith-message-1.4.4.tgz#ec20bc7487e7472d9a0d989e422386d16535ad24"
+  integrity sha1-7CC8dIfnRy2aDZieQiOG0WU1rSQ=
+
+griffith-mp4@^1.4.3, griffith-mp4@^1.5.3, griffith-mp4@^1.6.1:
+  version "1.5.3"
+  resolved "https://registry.npm.taobao.org/griffith-mp4/download/griffith-mp4-1.5.3.tgz#c721002a73c9f0afde3d904f47414409714b0efa"
+  integrity sha1-xyEAKnPJ8K/ePZBPR0FECXFLDvo=
+  dependencies:
+    griffith-utils "^1.4.4"
+    lodash "^4.17.15"
+
+griffith-utils@^1.4.3, griffith-utils@^1.4.4, griffith-utils@^1.6.1:
+  version "1.4.4"
+  resolved "https://registry.npm.taobao.org/griffith-utils/download/griffith-utils-1.4.4.tgz#b9efcf88b5ac39bfa94567132883bf38b1376138"
+  integrity sha1-ue/PiLWsOb+pRWcTKIO/OLE3YTg=
+
 griffith@1.4.3:
   version "1.4.3"
   resolved "https://registry.yarnpkg.com/griffith/-/griffith-1.4.3.tgz#8c1b87c44a07499e0d26fc163f5db83864333964"
@@ -7164,6 +7189,23 @@ griffith@1.4.3:
     griffith-utils "^1.4.3"
     isomorphic-bigscreen "2.0.5"
     lodash "4.17.11"
+    prop-types "^15.7.2"
+    query-string "^6.4.2"
+
+griffith@^1.6.1:
+  version "1.5.3"
+  resolved "https://registry.npm.taobao.org/griffith/download/griffith-1.5.3.tgz#c2e247e1b43a3f3fa94ed432f4f7b01432fdd868"
+  integrity sha1-wuJH4bQ6Pz+pTtQy9PewFDL92Gg=
+  dependencies:
+    aphrodite "2.3.1"
+    element-resize-event "^3.0.3"
+    eventemitter3 "^3.1.0"
+    griffith-hls "^1.4.4"
+    griffith-message "^1.4.4"
+    griffith-mp4 "^1.5.3"
+    griffith-utils "^1.4.4"
+    isomorphic-bigscreen "2.0.5"
+    lodash "^4.17.15"
     prop-types "^15.7.2"
     query-string "^6.4.2"
 
