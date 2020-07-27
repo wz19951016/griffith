@@ -1,6 +1,6 @@
 {
   "name": "griffith-mp4-justcome",
-  "version": "1.6.11",
+  "version": "1.6.12",
   "description": "griffith mp4 plugin",
   "homepage": "https://github.com/wz19951016/griffith/tree/master/packages/griffith-mp4",
   "license": "MIT",
@@ -24,7 +24,7 @@
     "react-dom": ">=16.3.0 <17.0.0"
   },
   "dependencies": {
-    "griffith-utils-justcome": "^1.6.2",
+    "griffith-utils-justcome": "^1.6.12",
     "lodash": "^4.17.15"
   },
   "gitHead": "8a478772ff3886dac7a9a6bf27fd6a9c15fa0575"
