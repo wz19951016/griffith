@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.6.4](https://github.com/wz19951016/griffith/compare/v1.6.2...v1.6.4) (2020-07-27)
+
+**Note:** Version bump only for package griffith-standalone-justcome
+
+
+
+
+
+
 ## [1.6.2](https://github.com/wz19951016/griffith/compare/v1.6.1...v1.6.2) (2020-07-26)
 
 **Note:** Version bump only for package griffith-standalone-justcome
