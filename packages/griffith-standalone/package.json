@@ -1,6 +1,6 @@
 {
   "name": "griffith-standalone-justcome",
-  "version": "1.6.6",
+  "version": "1.6.1",
   "description": "Zhihu Video Player",
   "homepage": "https://github.com/wz19951016/griffith/tree/master/packages/griffith-standalone",
   "license": "MIT",
@@ -19,5 +19,5 @@
     "react": "16.4.2",
     "react-dom": "16.4.2"
   },
-  "gitHead": "e2f805625f9b8cd2a34a9cc26e8e811a224e0756"
+  "gitHead": "e0b66e209ffb814b6872bacb1bf3f6f994cd3389"
 }
