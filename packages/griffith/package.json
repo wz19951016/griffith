@@ -1,6 +1,6 @@
 {
   "name": "griffith-justcome",
-  "version": "1.6.10",
+  "version": "1.6.11",
   "description": "Zhihu Video Player",
   "homepage": "https://github.com/wz19951016/griffith/tree/master/packages/griffith",
   "license": "MIT",
@@ -28,7 +28,7 @@
     "eventemitter3": "^3.1.0",
     "griffith-hls-justcome": "^1.6.1",
     "griffith-message-justcome": "^1.6.1",
-    "griffith-mp4-justcome": "^1.6.1",
+    "griffith-mp4-justcome": "^1.6.11",
     "griffith-utils-justcome": "^1.6.1",
     "isomorphic-bigscreen": "2.0.5",
     "lodash": "^4.17.15",
