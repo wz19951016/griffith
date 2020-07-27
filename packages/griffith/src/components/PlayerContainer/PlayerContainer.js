@@ -2,7 +2,7 @@
  * @Author: wangzhong
  * @Date: 2020-07-24 16:22:20
  * @LastEditors: wangzhong
- * @LastEditTime: 2020-07-24 17:33:33
+ * @LastEditTime: 2020-07-27 15:34:23
  * @FilePath: /griffith/packages/griffith/src/components/PlayerContainer/PlayerContainer.js
  */
 
@@ -41,6 +41,7 @@ const PlayerContainer = ({
   showTimeText,
   showPLayPauseBtn,
   timelineStyle,
+  timelineWrapStyle,
 }) => (
   <ObjectFitProvider initialObjectFit={initialObjectFit}>
     <PositionProvider shouldObserveResize={shouldObserveResize}>
@@ -69,6 +70,7 @@ const PlayerContainer = ({
                       showTimeText={showTimeText}
                       showPLayPauseBtn={showPLayPauseBtn}
                       timelineStyle={timelineStyle}
+                      timelineWrapStyle={timelineWrapStyle}
                     />
                   )}
                 </VideoSourceContext.Consumer>
@@ -112,6 +114,7 @@ PlayerContainer.propTypes = {
   showTimeText: PropTypes.bool,
   showPLayPauseBtn: PropTypes.bool,
   timelineStyle: PropTypes.object,
+  timelineWrapStyle: PropTypes.object,
 }
 
 export default PlayerContainer

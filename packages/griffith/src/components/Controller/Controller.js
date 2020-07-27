@@ -38,6 +38,7 @@ class Controller extends Component {
     showTimeText: PropTypes.bool,
     showPLayPauseBtn: PropTypes.bool,
     timelineStyle: PropTypes.object,
+    timelineWrapStyle: PropTypes.object,
   }
 
   static defaultProps = {
@@ -270,6 +271,7 @@ class Controller extends Component {
       showTimeText,
       showPLayPauseBtn,
       timelineStyle,
+      timelineWrapStyle,
     } = this.props
     const {
       isVolumeHovered,
@@ -279,8 +281,12 @@ class Controller extends Component {
     } = this.state
 
     const displayedCurrentTime = slideTime || currentTime
+
     return (
-      <div className={css(styles.root, isFullScreen && styles.fullScreened)}>
+      <div
+        className={css(styles.root, isFullScreen && styles.fullScreened)}
+        style={timelineWrapStyle}
+      >
         {showPLayPauseBtn && (
           <PlayButtonItem
             isPlaying={isPlaying}
@@ -295,7 +301,7 @@ class Controller extends Component {
           onDragEnd={onDragEnd}
           onChange={this.onDragMove}
           onSeek={this.handleSeek}
-          style={timelineStyle}
+          timelineStyle={timelineStyle}
         />
         {showTimeText && (
           <CombinedTimeItem

@@ -2,13 +2,13 @@
  * @Author: wangzhong
  * @Date: 2020-07-24 16:22:19
  * @LastEditors: wangzhong
- * @LastEditTime: 2020-07-24 18:07:25
+ * @LastEditTime: 2020-07-27 15:33:39
  * @FilePath: /griffith/example/mp4/App.js
  */
 
 import React from 'react'
 import {hot} from 'react-hot-loader'
-import PlayerContainer, {MessageContext} from 'griffith'
+import PlayerContainer, {MessageContext} from '../../packages/griffith'
 import LayerTest from './LayerTest'
 
 const duration = 182
@@ -49,7 +49,18 @@ const props = {
   showQuality: false,
   showTimeText: false,
   showPLayPauseBtn: false,
-  timelineStyle: {},
+  timelineWrapStyle: {
+    position: 'fixed',
+    width: '100%',
+    height: '5px',
+    left: 0,
+    top: 100,
+    zIndex: 9999,
+    padding: 0,
+  },
+  timelineStyle: {
+    padding: 0,
+  },
 }
 
 const App = () => (

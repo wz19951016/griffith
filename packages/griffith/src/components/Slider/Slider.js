@@ -217,15 +217,24 @@ class Slider extends Component {
           onMouseDown: this.handleDragStart,
         }
     return (
-      <div className={this.getClassName('root')} {...interactionProps}>
+      <div
+        className={this.getClassName('root')}
+        {...interactionProps}
+        style={this.props.timelineStyle}
+      >
         <div className={this.getClassName('inner')}>
-          <div ref={this.trackRef} className={this.getClassName('track')}>
+          <div
+            ref={this.trackRef}
+            className={this.getClassName('track')}
+            style={this.props.timelineStyle ? {borderRadius: 0} : {}}
+          >
             {Boolean(buffered) && (
               <div
                 className={this.getClassName('bar', 'buffered')}
                 style={{
                   [this.getAlignKey()]: 0,
                   [this.getSizeKey()]: this.getBufferedPercentage(),
+                  borderRadius: this.props.timelineStyle ? 0 : 'normal',
                 }}
               />
             )}
@@ -234,6 +243,7 @@ class Slider extends Component {
               style={{
                 [this.getAlignKey()]: 0,
                 [this.getSizeKey()]: this.getPercentage(),
+                borderRadius: this.props.timelineStyle ? 0 : 'normal',
               }}
             />
           </div>

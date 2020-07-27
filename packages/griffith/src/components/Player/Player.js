@@ -354,6 +354,7 @@ class Player extends Component {
       showTimeText,
       showPLayPauseBtn,
       timelineStyle,
+      timelineWrapStyle,
     } = this.props
     const {
       isPlaybackStarted,
@@ -567,6 +568,7 @@ class Player extends Component {
                     showTimeText={showTimeText}
                     showPLayPauseBtn={showPLayPauseBtn}
                     timelineStyle={timelineStyle}
+                    timelineWrapStyle={timelineWrapStyle}
                   />
                 </div>
               )}
