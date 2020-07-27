@@ -18,5 +18,5 @@
     "prebuild": "rm -rf esm cjs",
     "build": "rollup -c ../../rollup.config.js"
   },
-  "gitHead": "f450ff35bd44016f40b0540ef5fba4a4f3fa24a8"
+  "gitHead": "8a478772ff3886dac7a9a6bf27fd6a9c15fa0575"
 }
