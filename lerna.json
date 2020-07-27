@@ -1,8 +1,13 @@
 {
   "packages": [
-    "packages/*"
+    "packages/griffith",
+    "packages/griffith-hls",
+    "packages/griffith-message",
+    "packages/griffith-mp4",
+    "packages/griffith-standalone",
+    "packages/griffith-utils"
   ],
-  "version": "1.6.2",
+  "version": "1.6.3",
   "conventionalCommits": true,
   "npmClient": "yarn",
   "useWorkspaces": true
