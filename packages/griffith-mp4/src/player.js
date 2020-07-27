@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import {ua} from 'griffith-utils'
+import {ua} from 'griffith-utils-justcome'
 import MSE from './mse'
 
 const {isSafari} = ua

@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import EventEmitter from 'eventemitter3'
-import {createMessageHelper} from 'griffith-message'
+import {createMessageHelper} from 'griffith-message-justcome'
 
 const EVENT_TYPE = 'event'
 const ACTION_TYPE = 'action'

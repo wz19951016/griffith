@@ -1,8 +1,8 @@
 import React, {Component} from 'react'
 import PropTypes from 'prop-types'
 import {css} from 'aphrodite/no-important'
-import {EVENTS} from 'griffith-message'
-import {logger, ua} from 'griffith-utils'
+import {EVENTS} from 'griffith-message-justcome'
+import {logger, ua} from 'griffith-utils-justcome'
 
 import {VideoSourceContext} from '../../contexts/VideoSource'
 import VideoWithMessage from './VideoWithMessage'

@@ -9,7 +9,7 @@
 import VideoComponent from './Video'
 
 export default {
-  pluginName: 'griffith-hls',
+  pluginName: 'griffith-hls-justcome',
   VideoComponent,
   willHandleSrcChange: true,
 }

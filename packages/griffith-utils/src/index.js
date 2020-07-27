@@ -2,7 +2,7 @@
  * @Author: wangzhong
  * @Date: 2020-07-24 18:09:18
  * @LastEditors: wangzhong
- * @LastEditTime: 2020-07-27 14:28:07
+ * @LastEditTime: 2020-07-27 14:36:54
  * @FilePath: /griffith/packages/griffith-utils/src/index.js
  */
 

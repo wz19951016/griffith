@@ -1,4 +1,4 @@
-import {ua} from 'griffith-utils'
+import {ua} from 'griffith-utils-justcome'
 import FragmentFetch from '../fetch'
 import MP4Parse from '../mp4/mp4Parse'
 import MP4Probe from '../mp4/mp4Probe'

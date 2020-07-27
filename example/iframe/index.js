@@ -1,4 +1,12 @@
-import {EVENTS, ACTIONS, createMessageHelper} from 'griffith-message'
+/*
+ * @Author: wangzhong
+ * @Date: 2020-07-24 18:09:17
+ * @LastEditors: wangzhong
+ * @LastEditTime: 2020-07-27 14:39:18
+ * @FilePath: /griffith/example/iframe/index.js
+ */
+
+import {EVENTS, ACTIONS, createMessageHelper} from 'griffith-message-justcome'
 
 const {subscribeMessage, dispatchMessage} = createMessageHelper()
 

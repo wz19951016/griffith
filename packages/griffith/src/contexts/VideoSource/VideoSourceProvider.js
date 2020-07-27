@@ -3,8 +3,8 @@ import PropTypes from 'prop-types'
 import {parse} from 'query-string'
 import VideoSourceContext from './VideoSourceContext'
 import {getQualities, getSources} from './parsePlaylist'
-import {EVENTS} from 'griffith-message'
-import {ua} from 'griffith-utils'
+import {EVENTS} from 'griffith-message-justcome'
+import {ua} from 'griffith-utils-justcome'
 
 const {isMobile} = ua
 

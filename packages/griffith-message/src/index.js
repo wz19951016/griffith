@@ -2,7 +2,7 @@
  * @Author: wangzhong
  * @Date: 2020-07-24 18:09:17
  * @LastEditors: wangzhong
- * @LastEditTime: 2020-07-27 14:27:54
+ * @LastEditTime: 2020-07-27 14:40:14
  * @FilePath: /griffith/packages/griffith-message/src/index.js
  */
 

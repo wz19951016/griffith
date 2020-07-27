@@ -1,5 +1,5 @@
 import React from 'react'
-import {sequence} from 'griffith-utils'
+import {sequence} from 'griffith-utils-justcome'
 import noop from 'lodash/noop'
 
 export default class Hover extends React.Component {

@@ -1,6 +1,6 @@
 import React from 'react'
 import {css} from 'aphrodite/no-important'
-import {ua} from 'griffith-utils'
+import {ua} from 'griffith-utils-justcome'
 import styles from '../styles'
 import Icon from '../../Icon'
 import * as icons from '../../Icon/icons/controller'

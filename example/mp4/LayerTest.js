@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import {parse} from 'query-string'
 import {StyleSheet, css} from 'aphrodite/no-important'
 import {Layer} from 'griffith'
-import {EVENTS} from 'griffith-message'
+import {EVENTS} from 'griffith-message-justcome'
 
 const styles = StyleSheet.create({
   logo: {
