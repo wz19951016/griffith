@@ -39,6 +39,7 @@ module.exports = env => {
           secure: false,
         },
       },
+      host: '0.0.0.0',
     },
 
     devtool: 'cheap-module-eval-source-map',

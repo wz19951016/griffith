@@ -1,3 +1,10 @@
+/*
+ * @Author: wangzhong
+ * @Date: 2020-07-27 15:43:10
+ * @LastEditors: wangzhong
+ * @LastEditTime: 2020-08-06 16:00:14
+ * @FilePath: /griffith/example/hls/App.js
+ */
 import React from 'react'
 import {hot} from 'react-hot-loader'
 import PlayerContainer from 'griffith'
@@ -40,7 +47,6 @@ const sources = {
 const props = {
   id: 'zhihu2018',
   title: '2018 我们如何与世界相处？',
-  standalone: true,
   cover: 'https://zhstatic.zhihu.com/cfe/griffith/player.png',
   duration,
   sources,

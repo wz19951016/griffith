@@ -1,3 +1,10 @@
+/*
+ * @Author: wangzhong
+ * @Date: 2020-07-27 15:43:10
+ * @LastEditors: wangzhong
+ * @LastEditTime: 2020-08-06 16:08:23
+ * @FilePath: /griffith/example/inline/App.js
+ */
 import React from 'react'
 import {hot} from 'react-hot-loader'
 import PlayerContainer, {Layer} from 'griffith'
@@ -71,7 +78,20 @@ class App extends React.Component {
           <VideoCard data={data} height={320} />
           <h3>object-fit: cover</h3>
           <p>预期：视频左右裁切；水印相对播放器定位</p>
-          <VideoCard data={data} height={320} objectFit="cover" />
+          <div style={{position: 'relative'}}>
+            <VideoCard data={data} height={320} objectFit="cover" />
+            <p
+              style={{
+                position: 'absolute',
+                left: 0,
+                top: '50px',
+                color: '#fff',
+                zIndex: 99999,
+              }}
+            >
+              dsbioufhesiofbheiwoubfhneiufhbneiowfheiwofhewio
+            </p>
+          </div>
         </section>
         <hr />
         <section>

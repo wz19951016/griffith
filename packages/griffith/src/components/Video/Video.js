@@ -297,8 +297,12 @@ class Video extends Component {
         className={css(styles.root)}
         preload="metadata"
         playsInline
-        webkit-playsinline=""
+        x5-playsinline
+        webkit-playsinline
         x-webkit-airplay="deny"
+        x5-video-player-type="h5"
+        x5-video-orientation="landscape|portrait"
+        x5-video-player-fullscreen="true"
         muted={!volume}
         controls={controls}
         src={src}
