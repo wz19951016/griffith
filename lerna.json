@@ -7,7 +7,7 @@
     "packages/griffith-standalone",
     "packages/griffith-utils"
   ],
-  "version": "1.6.14",
+  "version": "1.6.15",
   "conventionalCommits": true,
   "npmClient": "yarn",
   "useWorkspaces": true

@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.6.15](https://github.com/wz19951016/griffith/compare/v1.6.14...v1.6.15) (2020-08-06)
+
+**Note:** Version bump only for package example
+
+
+
+
+
 ## [1.6.14](https://github.com/wz19951016/griffith/compare/v1.6.13...v1.6.14) (2020-07-27)
 
 **Note:** Version bump only for package example
